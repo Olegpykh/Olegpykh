@@ -49,9 +49,9 @@ A lightning-fast, cinematic movie & TV explorer built with **React 18 + Vite + T
 
 **A fast, responsive movie & TV show explorer with a universal details page, official YouTube trailers in full-screen modal, Netflix-style navigation, and real user authentication via Clerk — built with modern React + TypeScript.**
 
-### Key Features — Power-Packed & Pure Joy to Use
+### Key Features 
 
-- **Universal Details Page** — One page to rule them all!  
+- **Universal Details Page**  
   Works perfectly for both movies and TV series — media type auto-detected from the TMDB ID.
 
 - **Official YouTube Trailer** — Sleek full-screen immersive modal  
