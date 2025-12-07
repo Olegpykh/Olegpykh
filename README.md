@@ -23,11 +23,12 @@
 
 ## Mobile Experience
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 60px 0;">
-  <img src="https://github.com/user-attachments/assets/7511f051-cb62-4e75-82b0-1fb077de7c1b" style="width: 280px; border-radius: 20px; box-shadow: 0 12px 35px rgba(0,0,0,0.3);" />
-  <img src="https://github.com/user-attachments/assets/cca5674e-7d40-448d-a81d-661d267e5ea0" style="width: 280px; border-radius: 20px; box-shadow: 0 12px 35px rgba(0,0,0,0.3);" />
-  <img src="https://github.com/user-attachments/assets/7c1f6bab-f697-4301-a124-6272fb3c86cd" style="width: 280px; border-radius: 20px; box-shadow: 0 12px 35px rgba(0,0,0,0.3);" />
+<div style="display: flex; white-space: nowrap; gap: 20px; justify-content: center; margin: 60px 0; overflow-x: auto;">
+<img width="307" height="545" alt="Bildschirmfoto 2025-12-07 um 03 12 58" src="https://github.com/user-attachments/assets/8bba34b0-ba0e-4a2c-a996-3b8dc10aaa3c" />
+<img width="306" height="546" alt="Bildschirmfoto 2025-12-07 um 03 14 38" src="https://github.com/user-attachments/assets/228c0746-b5b0-45d8-9796-f101fa02570b" />
+<img width="300" height="544" src="https://github.com/user-attachments/assets/6b1455dd-e4c5-4cae-93ea-e58b5f37d627" style="border-radius: 20px; box-shadow: 0 12px 35px rgba(0,0,0,0.3);" />
 </div>
+
 
 </div>
 
