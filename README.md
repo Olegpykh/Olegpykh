@@ -36,57 +36,62 @@
 
 #  <strong>StreamVerse</strong>
 
-**Universal details page** • **Official YouTube trailers in full-screen modal** • **Horizontal scrolling rows** • **Personal Watchlist**  
-A modern movie & TV explorer built with **React 18 + Vite + TypeScript + Tailwind CSS**
+**Universal details page** • **Official YouTube trailers** • **Netflix-style rows** • **Clerk Authentication**
+
+A lightning-fast, cinematic movie & TV explorer built with **React 18 + Vite + TypeScript + Tailwind CSS**
 
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
+[![Clerk](https://img.shields.io/badge/Clerk-Authentication-5B2DFF?style=for-the-badge&logo=clerk&logoColor=white)](https://clerk.com)
 
 </div>
 
+**A fast, responsive movie & TV show explorer with a universal details page, official YouTube trailers in full-screen modal, Netflix-style navigation, and real user authentication via Clerk — built with modern React + TypeScript.**
 
-**A fast, responsive movie & TV show explorer with a universal details page, official YouTube trailer modal, and cinematic design — built with modern React + TypeScript.**
- 
-**Key Features: Power-Packed, Polished & Pure Joy to Use**  
-We obsessed over every pixel so you don’t have to.
+### Key Features — Power-Packed & Pure Joy to Use
 
-**Universal Details Page** — One page to rule them all!  
-Works perfectly for both movies and TV series — media type auto-detected from the TMDB ID.
+- **Universal Details Page** — One page to rule them all!  
+  Works perfectly for both movies and TV series — media type auto-detected from the TMDB ID.
 
-**Official YouTube Trailer** — Sleek full-screen immersive modal  
-Watch in the highest quality with zero distractions.
+- **Official YouTube Trailer** — Sleek full-screen immersive modal  
+  Highest quality, zero distractions.
 
-**Fully Responsive Design** — Looks stunning everywhere  
-Mobile ✦ Tablet ✦ Desktop — pixel-perfect on every screen.
+- **Fully Responsive Design** — Looks stunning everywhere  
+  Mobile • Tablet • Desktop — pixel-perfect on every screen.
 
-**Smart & Bulletproof UX**  
-Beautiful loading states, rock-solid error handling, and graceful fallbacks — no more blank pages of death.
+- **Smart & Bulletproof UX**  
+  Beautiful loading states, rock-solid error handling, graceful fallbacks — no blank pages of death.
 
-**Netflix-Style Navigation**  
-Horizontal scrollable rows with buttery-smooth scrolling and dynamic ← → arrows.
+- **Netflix-Style Navigation**  
+  Horizontal scrollable rows with buttery-smooth scrolling and dynamic ← → arrows.
 
-**Your Personal Watchlist**
-Save and manage your favorite movies & shows — persists across sessions and devices.
+- **Your Personal Watchlist**  
+  Save and manage favorites.
 
-**Integrated Search** — Right in the NavBar  
-Find anything instantly, always one click away.
+- **Production-Ready Authentication by Clerk**  
+  • One-click sign-in with Google 
+  • Magic Links 
 
-🛠 **Tech Stack — Modern, Fast, Future-Proof**
+- **Integrated Search** — Right in the NavBar  
+  Find anything instantly, always one click away.
 
-| Category        | Technology                    | Why It Rocks                                           |
-|-----------------|-------------------------------|--------------------------------------------------------|
-| Frontend        | **React 18 + Vite**           | Lightning-fast dev server & optimized production builds |
-| Routing         | **React Router v6**           | Declarative, modern client-side routing                |
-| State           | **Redux Toolkit**             | Predictable state for search, watchlist & loading      |
-| Data Fetching   | **Axios**                     | Lightweight, interceptors-powered HTTP client          |
-| Styling         | **Tailwind CSS**              | Utility-first, rapid, consistent & fully responsive    |
-| API             | **TMDB API**                  | The richest, most reliable movie & TV data source      |
-| Icons           | **Heroicons + react-icons/fa**| Clean SVG arrows + elegant solid Font Awesome icons    |
-| Deployment      | **Vercel**                    | Push to GitHub → instant edge-network production ⚡️   |
+### Tech Stack — Modern, Fast, Future-Proof
 
-✨ **Architecture Highlights**  
-- Full migration to **strict-mode TypeScript** (noImplicitAny, etc.) — bulletproof code  
-- Universal API helpers + safe fallbacks — app never crashes even if posters/biographies go missing  
-- Clean, performant, and ridiculously maintainable codebase — a joy to work with now and tomorrow
+| Category         | Technology                      | Why It Rocks                                                   |
+|------------------|---------------------------------|----------------------------------------------------------------|
+| Frontend         | **React 18 + Vite**             | Lightning-fast dev server & optimized production builds        |
+| Routing          | **React Router v6**             | Declarative, modern client-side routing                       |
+| State            | **Redux Toolkit**               | Predictable state management for search, watchlist & loading  |
+| Authentication   | **Clerk**                       | Production-ready auth in minutes    
+| Data Fetching    | **Axios**                       | Lightweight, interceptors-powered HTTP client                  |
+| Styling          | **Tailwind CSS**                | Utility-first, rapid, consistent & fully responsive           |
+| API              | **TMDB API**                    | The richest, most reliable movie & TV data source              |
+| Icons            | **Heroicons + react-icons/fa**  | Clean SVG arrows + elegant solid Font Awesome icons            |
+| Deployment       | **Vercel**                      | Push to GitHub → instant edge-network production ⚡️          |
 
+### Architecture Highlights 
+- Full migration to **strict-mode TypeScript** (noImplicitAny, etc.) — bulletproof code
+- Universal API helpers + safe fallbacks — app never crashes
+- **Clerk authentication** — 10,000 monthly active users free forever
+- Clean, performant, and ridiculously maintainable codebase
 
