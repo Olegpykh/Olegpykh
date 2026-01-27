@@ -1,14 +1,20 @@
-# StreamVerse Trailers – Modern Movie & TV Show Explorer
-[Live Demo](https://movie-trailer-eight-indol.vercel.app/)
+# Frontend Projects — React • TypeScript • Redux
 
-<div align="center">
+**Live Demos:**  
+🎬 StreamVerse — https://movie-trailer-eight-indol.vercel.app/  
+🛒 E-commerce Store — https://ecommerce-store-hazel-rho.vercel.app/
 
-## Desktop Experience
+A collection of **production-ready frontend projects** built with **React 18, TypeScript, Redux Toolkit, and Tailwind CSS**.  
+These projects demonstrate real-world UI/UX, scalable architecture, authentication, performance optimization, and clean code practices.
+
+---
+
+## 🖥️ Desktop Experience
 
 <table>
   <tr>
     <th align="center">🎬 StreamVerse — Movie & TV Explorer</th>
-    <th align="center">🛒 E-Commerce Platform</th>
+    <th align="center">🛒 E-commerce Platform</th>
   </tr>
   <tr>
     <td align="center">
@@ -26,10 +32,9 @@
   </tr>
 </table>
 
+---
 
-
-
-## Mobile Experience
+## 📱 Mobile Experience
 
 <div style="display:flex; gap:16px; justify-content:center; overflow-x:auto;">
   <img width="260" src="https://github.com/user-attachments/assets/8bba34b0-ba0e-4a2c-a996-3b8dc10aaa3c"/>
@@ -37,8 +42,6 @@
   <img width="260" src="https://github.com/user-attachments/assets/8eb86711-ca80-45d1-bd89-5830a9f6aa0e"/>
 </div>
 
-
-</div>
 
 # 🛍️ E-commerce Store — Modern React Storefront
 
