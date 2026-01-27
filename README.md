@@ -7,30 +7,111 @@
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/2b7b801d-5dc9-4f60-a9b4-7cd1581dce68" width="500"/></td>
-    <td><img src="https://github.com/user-attachments/assets/c94da68e-6128-456d-8a49-c009f0f1d73e" width="500"/></td>
+    <th align="center">🎬 StreamVerse — Movie & TV Explorer</th>
+    <th align="center">🛒 E-Commerce Platform</th>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/f72d7251-3145-462b-a34a-3301e16120b5" width="500"/></td>
-    <td><img src="https://github.com/user-attachments/assets/d635f737-6183-4254-b711-5e0fe95f3d89" width="500"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/0175e48b-f347-4e37-b669-4577ef70ac1e" width="500"/></td>
-    <td><img src="https://github.com/user-attachments/assets/242f2c84-c27d-4f92-ad8f-ed09700c1d1b" width="500"/></td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/2b7b801d-5dc9-4f60-a9b4-7cd1581dce68" width="420"/><br/>
+      <img src="https://github.com/user-attachments/assets/c94da68e-6128-456d-8a49-c009f0f1d73e" width="420"/><br/>
+      <img src="https://github.com/user-attachments/assets/f72d7251-3145-462b-a34a-3301e16120b5" width="420"/><br/>
+      <img src="https://github.com/user-attachments/assets/d635f737-6183-4254-b711-5e0fe95f3d89" width="420"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/d3617004-350a-4c5e-8a78-708b06b1a2ae" width="420"/><br/>
+      <img src="https://github.com/user-attachments/assets/50f4d78a-1f4c-4534-9b69-370db6e5944a" width="420"/><br/>
+      <img src="https://github.com/user-attachments/assets/a5e5f7ac-dd2b-42bf-9d81-7b1b30302f82" width="420"/><br/>
+      <img src="https://github.com/user-attachments/assets/5e732451-66e9-4934-a097-f17245979ae2" width="420"/>
+    </td>
   </tr>
 </table>
 
 
+
+
 ## Mobile Experience
 
-<div style="display: flex; white-space: nowrap; gap: 20px; justify-content: center; margin: 60px 0; overflow-x: auto;">
-<img width="307" height="545" alt="Bildschirmfoto 2025-12-07 um 03 12 58" src="https://github.com/user-attachments/assets/8bba34b0-ba0e-4a2c-a996-3b8dc10aaa3c" />
-<img width="306" height="546" alt="Bildschirmfoto 2025-12-07 um 03 14 38" src="https://github.com/user-attachments/assets/228c0746-b5b0-45d8-9796-f101fa02570b" />
-
+<div style="display:flex; gap:16px; justify-content:center; overflow-x:auto;">
+  <img width="260" src="https://github.com/user-attachments/assets/8bba34b0-ba0e-4a2c-a996-3b8dc10aaa3c"/>
+  <img width="260" src="https://github.com/user-attachments/assets/228c0746-b5b0-45d8-9796-f101fa02570b"/>
+  <img width="260" src="https://github.com/user-attachments/assets/8eb86711-ca80-45d1-bd89-5830a9f6aa0e"/>
 </div>
 
 
 </div>
+
+# 🛍️ E-commerce Store — Modern React Storefront
+
+**Live Demo:** https://ecommerce-store-hazel-rho.vercel.app/  
+**Tech:** React 18 • TypeScript • Tailwind CSS • Redux Toolkit • Vite • Vercel
+
+A fully responsive **modern e-commerce frontend** built with React and the latest frontend stack.  
+This project demonstrates real-world UI/UX patterns, global state management, performance optimizations, and scalable frontend architecture suitable for production use.
+
+---
+
+## 🚀 Key Features
+
+### 🧠 Core Functionality
+- 🛒 Product catalog with dynamic product listing
+- 🔍 Search and filter support
+- 📦 Add to cart / Remove from cart
+- 🧾 Cart summary with item count and total price
+- 🛠️ Global state management with Redux Toolkit
+- 📱 Fully responsive layout (desktop & mobile)
+
+---
+
+## 🧠 Advanced Architecture & Implementation Details
+
+- 🎨 **Theme switching via Clerk**  
+  Dark / Light theme toggle is implemented **through Clerk** using a **custom Account Page**, fully integrated with the global UI theme state.
+
+- 🔐 **Custom Clerk Account Page**  
+  Authentication is handled via Clerk with a **customized account page**, allowing extended control over user settings and UI behavior.
+
+- 🔁 **Redux Toolkit with async thunks**  
+  Global state management is built with **Redux Toolkit**, including:
+  - async logic using `createAsyncThunk`
+  - centralized loading and error handling
+  - predictable and scalable state architecture
+
+- ⚡ **Lazy loading & code splitting**  
+  Route-level **lazy loading** is implemented in `App.tsx` using:
+  - `React.lazy`
+  - `Suspense`  
+  This improves initial load performance and reduces bundle size.
+
+- 🗂️ **Feature-based folder structure**  
+  The application follows a **feature-based architecture**, where logic, Redux slices, and UI are grouped by domain, making the codebase scalable and easy to maintain.
+
+---
+
+## 🧱 What This Project Demonstrates
+
+- Real-world React application architecture
+- Strict TypeScript usage for type safety
+- Redux Toolkit with async thunks
+- Authentication and user management with Clerk
+- Custom account page & theme handling via auth layer
+- Performance optimization via lazy-loaded routes
+- Feature-based project structure
+- Fully responsive UI built with Tailwind CSS
+
+---
+
+## 📦 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Frontend | React 18 |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| State | Redux Toolkit |
+| Tooling | Vite |
+| Deployment | Vercel |
+
+This stack ensures a **performant, maintainable, and scalable** frontend application.
 
 
 <div align="center">
