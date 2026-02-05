@@ -46,7 +46,7 @@ These projects demonstrate real-world UI/UX, scalable architecture, authenticati
 # 🛍️ E-commerce Store — Modern React Storefront
 
 **Live Demo:** https://ecommerce-store-hazel-rho.vercel.app/  
-**Tech:** React 18 • TypeScript • Tailwind CSS • Redux Toolkit • Vite • Vercel
+**Tech:** React 18 • TypeScript • Tailwind CSS • Redux Toolkit • Vite • Vercel • REST API
 
 A fully responsive **modern e-commerce frontend** built with React and the latest frontend stack.  
 This project demonstrates real-world UI/UX patterns, global state management, performance optimizations, and scalable frontend architecture suitable for production use.
@@ -89,6 +89,23 @@ This project demonstrates real-world UI/UX patterns, global state management, pe
   The application follows a **feature-based architecture**, where logic, Redux slices, and UI are grouped by domain, making the codebase scalable and easy to maintain.
 
 ---
+
+ ## 🌐 **REST API Integration**
+The application communicates with a real REST API to fetch product data, manage cart operations, and keep the UI synchronized with backend responses.
+
+📥 GET products
+
+🔎 GET single product
+
+✏️ POST / PUT / DELETE operations for full CRUD
+
+⚠️ Centralized error handling and loading states
+
+🧩 Fully typed API responses using TypeScript
+
+🔁 Async data flow powered by Redux Toolkit thunks
+
+This mirrors real-world e-commerce architecture and demonstrates how to build scalable, API-driven React applications with predictable state management and clean data flow.
 
 ## 🧱 What This Project Demonstrates
 
