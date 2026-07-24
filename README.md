@@ -1,14 +1,13 @@
 <div align="center">
 
-# Frontend Projects — React • TypeScript
+# Frontend Projects — React • Next.js • TypeScript
 
-A collection of production-ready frontend projects built with **React, TypeScript, and Tailwind CSS**, demonstrating real-world UI/UX, scalable architecture, and clean code practices.
+A collection of production-ready frontend projects built with **React, Next.js, TypeScript, and Tailwind CSS**, demonstrating real-world UI/UX, scalable architecture, and clean code practices.
 
 🎬 **StreamVerse** — https://movie-trailer-eight-indol.vercel.app/
 🛍️ **studio-store** — https://studio-store-psi.vercel.app/
 
 </div>
-
 ---
 
 <div align="center">
