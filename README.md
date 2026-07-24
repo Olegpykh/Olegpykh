@@ -8,6 +8,7 @@ A collection of production-ready frontend projects built with **React, Next.js, 
 🛍️ **studio-store** — https://studio-store-psi.vercel.app/
 
 </div>
+
 ---
 
 <div align="center">
@@ -35,6 +36,10 @@ A fast, responsive movie & TV discovery app powered by the TMDB API. Browse popu
 
 - **Universal details page** — one page handles both movies and TV shows, media type auto-detected from the route
 - **Trailers in a compact popup** — click the trailer button on any card to watch without leaving the page; click the card itself to open the full details page
+- **TV seasons & episodes** — season selector with a full episode list (stills, air dates, ratings, descriptions) right on the show's details page
+- **Where to Watch** — streaming provider logos (Netflix, Amazon, Apple TV, etc.) via TMDB's watch-providers data, linking through to the exact title on JustWatch
+- **Community reviews** — horizontally-scrollable review cards with author rating and expandable text
+- **Discover, with genre filters & sorting** — Movie/TV toggle, clickable genre chips, sort by popularity/rating/newest, filter state lives in the URL so results are shareable
 - **Trending, with Day/Week toggle** — a curated row plus a full browsable grid with infinite scroll, no page-reload feel when switching tabs
 - **Similar titles** — every details page ends with a "More Like This" row pulled from TMDB's recommendation endpoint
 - **Personal watchlist** — save favorites, persisted through Redux state
@@ -60,9 +65,12 @@ A fast, responsive movie & TV discovery app powered by the TMDB API. Browse popu
 ### Architecture notes
 
 - Strict TypeScript throughout (`noImplicitAny` and friends) — no implicit `any` slipping through
-- API layer split by resource (`api/movie`, `api/tv`, `api/search`, `api/trending`, …) with consistent error handling and safe fallbacks, so a failed request never crashes the UI
+- API layer split by resource (`api/movie`, `api/tv`, `api/search`, `api/trending`, `api/discover`, `api/reviews`, `api/watchProviders`, …) with consistent error handling and safe fallbacks, so a failed request never crashes the UI
 - Redux slices organized by feature (movies, TV, favorites, UI), with shared fields (cast, videos, similar titles) reused across both movie and TV detail views
-- Infinite scroll implemented with `IntersectionObserver`, both for horizontal category rows and the vertical trending grid
+- Route-based code splitting via `React.lazy` + `Suspense` — each page ships as its own chunk, loaded on demand, cutting the initial bundle by roughly a fifth
+- Filter/sort state on the Discover page lives in the URL (`?type=&genre=&sort=`) rather than local-only state, so results are bookmarkable and survive back/forward navigation
+- Infinite scroll implemented with `IntersectionObserver`, both for horizontal category rows and vertical grids (Trending, Discover)
+- Custom 404 page and a `useDocumentTitle` hook so the browser tab reflects whatever's actually open (movie title, search query, person name, etc.)
 
 ---
 
@@ -80,7 +88,7 @@ Built with **Next.js 16 (App Router) + React 19 + TypeScript + Zustand + Tailwin
 
 ### What it does
 
-A headless e-commerce storefront that pulls product and inventory data from Shopify's Storefront API through Next.js's App Router, rather than shipping a traditional Shopify theme.
+A headless e-commerce storefront: product catalog, pricing, and inventory all live in Shopify, while the entire frontend — routing, rendering, UI — is built independently on Next.js and talks to Shopify only through its Storefront API. No Liquid templates, no hosted Shopify theme.
 
 ### Tech stack
 
@@ -89,7 +97,7 @@ A headless e-commerce storefront that pulls product and inventory data from Shop
 | Framework | Next.js 16 (App Router) |
 | Frontend | React 19 |
 | Language | TypeScript |
-| Commerce | Shopify Storefront API (via `@shopify/cli`) |
+| Commerce | Shopify Storefront API (GraphQL) |
 | Client state | Zustand |
 | Styling | Tailwind CSS v4 |
 | Theming | next-themes (dark/light mode) |
@@ -98,5 +106,8 @@ A headless e-commerce storefront that pulls product and inventory data from Shop
 
 ### Architecture notes
 
-- Headless commerce — storefront and product data live in Shopify, the frontend is fully decoupled and built independently on Next.js
-- App Router structure (`app/`, `components/`, `hooks/`, `lib/`, `types/`) — colocated by concern, typed end to end
+- **Headless commerce, GraphQL-only** — Shopify's Storefront API doesn't expose a REST option for storefronts, so product, price, and inventory data is fetched entirely via GraphQL queries against Shopify's backend; the frontend owns none of that data, just renders it
+- **Server-rendered by default** — App Router Server Components fetch storefront data on the server, so product/catalog pages ship pre-rendered HTML rather than fetching client-side after a loading spinner — meaningfully better for both first paint and SEO than a client-only SPA
+- **Decoupled from the storefront it replaces** — the frontend is fully independent of Shopify's own theme layer; Shopify remains the source of truth for commerce data, Next.js owns the entire UI/UX layer
+- **Lightweight client state** — Zustand (not Redux) for the parts that genuinely need client-side state, like cart contents, kept separate from server-fetched product data
+- Folder structure (`app/`, `components/`, `hooks/`, `lib/`, `types/`) — colocated by concern, typed end to end
